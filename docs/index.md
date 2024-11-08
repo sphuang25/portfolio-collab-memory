@@ -16,7 +16,7 @@ hero:
 
 features:
   - title: Assignments
-    details: Official reports of our project.
+    details: Official reports/write-ups of our project.
     link: /assignments
   - title: Members
     details: Learn about us!
