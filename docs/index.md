@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: "TODO: Title"
-  text: "TODO: Subtitle"
-  tagline: "TODO: Tagline"
+  name: "Memory Archiving"
+  text: "6.1040 Final Project"
+  tagline: "Team HarvIT"
   actions:
     - theme: brand
       text: Template Repository
@@ -15,11 +15,10 @@ hero:
       link: "https://61040-fa24.github.io/portfolio-dhua/"
 
 features:
-  - title: Blogs
-    details: Some cool blogs you'll write this semester!
-    link: /blogs
   - title: Assignments
-    details: All of your assignments will be posted on your portfolio.
-  - title: About Me
-    details: You'll implement a small bio about yourself on here!
+    details: Official reports and write-ups of our project.
+    link: /assignments
+  - title: Members
+    details: Learn about us!
+    link: /about
 ---

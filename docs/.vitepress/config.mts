@@ -2,7 +2,7 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "TODO: add your title here",
+  title: "Collaborative Memory Archiving",
   description: "6.1040 Fall 2024",
   // TODO: add your base here; this should be your repo name!
   // base: "/<REPO_NAME>/",
@@ -10,13 +10,18 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "Home", link: "/" },
-      { text: "Blogs", link: "/blogs" },
+      { text: "Assignments", link: "/assignments" },
+      { text: "Members", link: "/about" },
     ],
 
     sidebar: [
       {
-        text: "Blogs",
-        link: "/blogs",
+        text: "Assignments",
+        link: "/assignments",
+      },
+      {
+        text: "Members",
+        link: "/about",
       },
     ],
 
