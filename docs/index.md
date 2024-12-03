@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: "Memory Archiving"
-  text: "6.1040 Final Project"
-  tagline: "Team HarvIT"
+  name: "fam.ly"
+  text: "Collaborative Memory"
+  tagline: "6.1040 Final Project Team HarvIT"
   actions:
     - theme: brand
       text: Template Repository
