@@ -1,5 +1,5 @@
 ---
-title: "Project Phase 3: Convergent Design"
+title: "Project Phase 4: Convergent Design"
 layout: doc
 ---
 
@@ -27,7 +27,13 @@ The participants for the user tests are as follows:
    - Has a small family
    - Experienced with digital tools but primarily for communication with close family members.
 
-3. **Insert Another Person Here**
+3. **Isa He**
+   - Age: 31
+   - US Citizen
+   - Chinese
+   - Has a small family. Parents lives in the same family, but brother travels a lot.
+   - Works in design and architecture, familiar with technology and with apps.
+
 
 ### Prepopulate Realistic Data
 
