@@ -49,9 +49,27 @@ The participants for the user tests are as follows:
    - Works in design and architecture, familiar with technology and with apps.
 
 
-### Prepopulate Realistic Data
+## Prepopulate Realistic Data
 
-### Formulate a Task List
+Since this application is aiming for private conversation, you can not interact too much if you are a new user without a family.
+
+Here are the accounts that we have already make for you (one for each TA):
+> username: grandma Jane \
+> password: grandma
+
+> username: uncle brian \
+> password: uncle
+
+> username: aunt cathy \
+> password: aunt
+
+> username: grandpa jack \
+> password: grandpa
+
+Of course, you are more than welcome to create an account and invite people to join your family from scratch!
+
+
+## Formulate a Task List
 | Task Title                  | Instruction                                                                                          | Rationale                                                                                                     |
 |-----------------------------|------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | **1. Set Up Your Profile**  | "Log in to the app and complete your profile on Fam.ly."                | This task evaluates how users can complete their profile and understand the importance of setting goals (and if goals that are not there should be added). Since creating a profile to cater thread topics is a key customizable feature of our app, we want to ensure that users understand how to navigate to the profile page and succesfully fill out the profile form.|
