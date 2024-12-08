@@ -53,7 +53,12 @@ Overall, Mia was able to navigate through almost all of the app (except the init
 #### 5. Lack of Purpose within the Profile Section
 - **Flaw**: Users questioned the purpose of the profile section, as it currently only displays goals. Additionally, clicking the username at the top did not have any functions
 - **Why It Occurs**: The profile section lacks features or integrations that would make it more purposeful.
-- **Suggestions for Improvement**: Profile section could include profile pictures, bio, goals, etc. (more different aspects just so users can feel like they are making a profile). Additionally, the "Hello, ____" section could lead to the Profile Instead
+- **Suggestions for Improvement**: Profile section could include inalized the integration of the intended AI usage. Additionally, the "Hello, ____" section could lead to the Profile Instead
 - **Level**: Conceptual  
 - **Severity**: Moderate  
+
+### Finalize Implementation
+#### Fixed "Lack of Purpose within the Profile Section" clicking of the Username
+We were able to take Mia's concern into account and removed the Profile section from the tabs and included it instead to the top right corner of the webpage. This now allows for the Profile and anything related to the user itself to be in one section.
+
 
