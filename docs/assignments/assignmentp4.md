@@ -41,11 +41,11 @@ The participants for the user tests are as follows:
    - Has a small family
    - Experienced with digital tools but primarily for communication with close family members.
 
-3. **Isa He**
-   - Age: 31
-   - US Citizen
-   - Chinese
-   - Has a small family. Parents lives in the same family, but brother travels a lot.
+3. **Selin Dursun**
+   - Age: 26
+   - Turkish Citizen
+   - Turkish
+   - Both parents lives in Turkey and grandparents speaks different languages.
    - Works in design and architecture, familiar with technology and with apps.
 
 

@@ -21,6 +21,23 @@ Mia had a suprisingly fun time as "grandma Jane" creating posts and trying to fi
 
 Overall, Mia was able to navigate through almost all of the app (except the initial archiving). 
 
+
+#### Selin Dursun
+No problem logging in. Selin had no problem logging in with the provided account of “aunt cathay”.
+
+Receiving and accepting an invitation to join a family was difficult. She doesn’t know when she has received an invitation and refreshed the web page a few times to check. After she proceeded to navigate through all the pages to find where this invitation could be. She wishes there is a pop-up notification for the invitee that indicates to the user that an invitation has landed and requires user action. This could expand the functionality of the sidebar.
+
+When asked to create a new thread, Selin goes straight into the thread tab and doesn't see a plus button. This made her think this is an archive and the creation button is elsewhere. In the end, I had to show her that it is nested within the family. When creating a new thread, she associated making the thread as making a title for a chat and was confused as to why she needs to write a title, then make a post when she only has the intention of writing down the same thing. For her, making a thread is more about logging her idea/memory down quickly, and doesn’t like the delay of making a title. She referenced chatgpt creating a title for the chat automatically that can be changed later by the user.
+
+No issue. But doesn’t like the boxiness of the post, thinks it is a clickable item
+Creating a post was intuitive, but she thinks the purple boxes created are clickable.
+
+When I was prompted to create an archive to add to the timeline, Selin focused on the word “timeline” and went straight into the timeline tab and saw no button to create an archive. But when i said “add a memory”, she remembered the plus button with the word “memory” and went back to the active thread. She treated making a memory like it was another way to make a post and didn’t realize that the point is to archive a collection of posts and didn’t think that the posts are selectable/clickable despite the short helper sentence we put right next to the save button.
+
+
+After creating a memory/ archive, she didn’t realize that “timeline” is where the archived memories show up. Again, no real-time notification on the sidebar to show where it is added. Word associations are important.
+
+
 ### Flaws and Opportunities for Improvement
 #### 1. Invitation Section
 - **Flaw**: Invitations are currently in the "Families List" section, which users found unintuitive in terms of location. Users expected a separate or dedicated section for managing connections like a contact book or a "Friends/Family Invitations" section.
@@ -55,6 +72,13 @@ Overall, Mia was able to navigate through almost all of the app (except the init
 - **Why It Occurs**: The profile section lacks features or integrations that would make it more purposeful.
 - **Suggestions for Improvement**: Profile section could include inalized the integration of the intended AI usage. Additionally, the "Hello, ____" section could lead to the Profile Instead
 - **Level**: Conceptual  
+- **Severity**: Moderate  
+
+#### 6. Lack of Locational Visual Notification
+- **Flaw**: When an event occurs, such as creating an archive or recieving an invite, there is no direct visual confirmation or feedback to the user that suggest "where" in the app this happened and where they should go to check it out.
+- **Why It Occurs**: The database updates in the backend after a successful upload, but the frontend user doesn't know that. The app should give the user real-time feedback on all the changes that is happening the back and have an intuitve way to navigate and see the changes that was made.
+- **Suggestions for Improvement**: Create a pop up notifcation icon next to the tab button it is occuring in, to prompt user to click.
+- **Level**: Physical  
 - **Severity**: Moderate  
 
 ### Finalize Implementation
