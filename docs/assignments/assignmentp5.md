@@ -40,9 +40,9 @@ When I was prompted to create an archive to add to the timeline, Selin focused o
 
 After creating a memory/ archive, she didn’t realize that “timeline” is where the archived memories show up. Again, no real-time notification on the sidebar to show where it is added. Word associations are important.
 
-### Flaws and Opportunities for Improvement
+## Flaws and Opportunities for Improvement
 
-#### 1. Invitation Section
+### 1. Invitation Section
 
 - **Flaw**: Invitations are currently in the "Families List" section, which users found unintuitive in terms of location. Users expected a separate or dedicated section for managing connections like a contact book or a "Friends/Family Invitations" section.
 - **Why It Occurs**: The design places invitations alongside other family management options, making it less prominent and harder to locate for users. This is additionally enhanced by the fact that if a user is in multiple families, they would have to scroll down further to be able to view their invitations.
@@ -50,7 +50,7 @@ After creating a memory/ archive, she didn’t realize that “timeline” is wh
 - **Level**: Physical
 - **Severity**: Moderate
 
-#### 2. Difficulty in Understanding "Archiving"
+### 2. Difficulty in Understanding "Archiving"
 
 - **Flaw**: Users seem to not understand the distinction between threads and archived memories and how to differentiate the two sections.
 - **Why It Occurs**: The current design does not adequately differentiate or explain the two concepts within the app's interface.
@@ -58,7 +58,7 @@ After creating a memory/ archive, she didn’t realize that “timeline” is wh
 - **Level**: Conceptual
 - **Severity**: Major
 
-#### 3. Tedious Navigation for Creating Threads
+### 3. Tedious Navigation for Creating Threads
 
 - **Flaw**: Users needed to navigate into the "Families" tab and then into "Threads" to create a new thread, making it tedious for users.
 - **Why It Occurs**: The app's structure places thread creation within the families section when it could be in the "easier to access" Threads section
@@ -66,7 +66,7 @@ After creating a memory/ archive, she didn’t realize that “timeline” is wh
 - **Level**: Physical
 - **Severity**: Moderate
 
-#### 4. Inconsistent Design Elements within the Userface
+### 4. Inconsistent Design Elements within the Userface
 
 - **Flaw**: Slight inconsistencies regarding the padding, tab backgrounds, and spacing distraced from the aesthetic of the app
 - **Why It Occurs**: Lack of standardized design CSS across different sections of the app.
@@ -74,7 +74,7 @@ After creating a memory/ archive, she didn’t realize that “timeline” is wh
 - **Level**: Physical
 - **Severity**: Minor
 
-#### 5. Lack of Purpose within the Profile Section
+### 5. Lack of Purpose within the Profile Section
 
 - **Flaw**: Users questioned the purpose of the profile section, as it currently only displays goals. Additionally, clicking the username at the top did not have any functions
 - **Why It Occurs**: The profile section lacks features or integrations that would make it more purposeful.
@@ -82,7 +82,7 @@ After creating a memory/ archive, she didn’t realize that “timeline” is wh
 - **Level**: Conceptual
 - **Severity**: Moderate
 
-#### 6. Lack of Locational Visual Notification
+### 6. Lack of Locational Visual Notification
 
 - **Flaw**: When an event occurs, such as creating an archive or recieving an invite, there is no direct visual confirmation or feedback to the user that suggest "where" in the app this happened and where they should go to check it out.
 - **Why It Occurs**: The database updates in the backend after a successful upload, but the frontend user doesn't know that. The app should give the user real-time feedback on all the changes that is happening the back and have an intuitve way to navigate and see the changes that was made.
@@ -90,12 +90,43 @@ After creating a memory/ archive, she didn’t realize that “timeline” is wh
 - **Level**: Physical
 - **Severity**: Moderate
 
-### Finalize Implementation
+## Fix for Flaws in Finalize Implementation
 
-#### Fixed "Lack of Purpose within the Profile Section" clicking of the Username
+### Invitation Section
+
+An invitation tab is created to display all invites received. I did consider whether I should also allow user to send invitation in this tab, but I think this makes user confused even more. Hence, sending invites is still in Family tab, where received invitation has a separate tab.
+
+### Tedious Navigation for Creating Threads
+
+My original idea is to force user to get inside family to create Threads, so one can avoid adding threads with similar topics when one sees the existing Threads. But since the user thought the process was tedious, now user can also create a new thread in the Thread tab by specifying the family that one wants to add a Thread to.
+
+### Fixed "Lack of Purpose within the Profile Section" clicking of the Username
 
 We were able to take Mia's concern into account and removed the Profile section from the tabs and included it instead to the top right corner of the webpage. This now allows for the Profile and anything related to the user itself to be in one section.
 
-#### Fixed "Lack of Locational Visual Notification"
+### Fixed "Lack of Locational Visual Notification"
 
 We were able to address Selin's confusion after creating a memory archive and not knowing where it added or how to find it after. Now there is a red indicator that pops up next to the "Timeline" button on the sidebar nav after an archive has been creeated.
+
+## Design Revision
+
+1. The scope of the Thread concept
+> The original plan was Thread has its own page. When you create a thread, you can select certain users in the same family to have the access to this thread. However, this felt a little unclear and was hard for the user to build mental model. For example, A and B are both in family F1 and F2. Now you create thread T1 based on members of F1: A,B,C, and you create another thread T2 based on members of F2: A,B,D, the overlap of user A,B will lead to user's confusion about which family is this thread based on.
+
+> Hence, we changed the entire backend and frontend, so that a thread is constructed based on each family. And to simplify the operations for the user, all members can access the thread that is created in the family. 
+
+> Users can now see threads that correspond the family under the family tab > threads. They can also see all threads from different families in the Thread tab. According to the user test, interviewees would also like to be able to create new threads not just under family, so now users can create new threads in the general Thread tab by selecting which family do the users want to add the thread to.
+
+2. Removal of Commenting Concept
+
+> The structure of the application were used to be Thread > Post > Comment. Where people can construct a Thread with a prompt, users can make Posts under the each Thread, and also Comment under Posts. We think making post performs the function of "replying" to the threads, the addition of "commenting" might confused the users because there are too many layers.
+
+3. Family Request/ Invite
+
+> The previous idea for the family concept was similar to the Friending Concept that we used to have, where users can send an request to join a family, family can also send an invitation to the user. However, we think family is supposed to be a more closed, private place, and we don't want user to type in random familyname or id to successfully send a request to a family, so we only retain the "invitation" feature. All members in the family can invite other users into the family, but request to join a family can no longer be made.
+
+> According the user test, the user would like to have a seperate tab for received invitation, instead of listing under the families that one is currently in. Hence, a new tab was added.
+
+4. Notification
+
+> We did not specify what notification will look like in the early stage of this project, but the main idea is to engage user to check the memories that one archived. Currently, if you add a new archive, there will be a small dot beside the text of "Timeline" tab, which is the current implementation of notification.
