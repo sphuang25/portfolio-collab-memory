@@ -108,7 +108,7 @@ We were able to take Mia's concern into account and removed the Profile section 
 
 We were able to address Selin's confusion after creating a memory archive and not knowing where it added or how to find it after. Now there is a red indicator that pops up next to the "Timeline" button on the sidebar nav after an archive has been creeated.
 
-## Design Revision
+## Design Revision 
 
 1. The scope of the Thread concept
 > The original plan was Thread has its own page. When you create a thread, you can select certain users in the same family to have the access to this thread. However, this felt a little unclear and was hard for the user to build mental model. For example, A and B are both in family F1 and F2. Now you create thread T1 based on members of F1: A,B,C, and you create another thread T2 based on members of F2: A,B,D, the overlap of user A,B will lead to user's confusion about which family is this thread based on.
@@ -130,3 +130,7 @@ We were able to address Selin's confusion after creating a memory archive and no
 4. Notification
 
 > We did not specify what notification will look like in the early stage of this project, but the main idea is to engage user to check the memories that one archived. Currently, if you add a new archive, there will be a small dot beside the text of "Timeline" tab, which is the current implementation of notification.
+
+5. Removal of Audio, Image Posts, and AI functionality
+
+> Based on our feedback from P5, we removed the audio and image post buttons from the Threading Content Page as the backend functionality for these buttons is not complete so leaving these buttons the screen confused users since they don't do anything. We also revised the app to not include AI functionality as the backend for this is not implemented. We believe that with our profiling concept (which allows users to communicate their goals with using the app) and the text posting functionality in threading is sufficient to satisfy our app's goal of sharing memories and learning about family members.
